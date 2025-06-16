@@ -11,5 +11,6 @@ import e4 from './e4';
 import Flexbox from './Flexbox'; 
 import RestApi from './RestApi'; 
 import RegistrationScreen from './RegistrationScreen'; 
+import Exercise7 from './Exercise7'; 
 
-AppRegistry.registerComponent(appName, () => RegistrationScreen);
+AppRegistry.registerComponent(appName, () => Exercise7);
