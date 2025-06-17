@@ -8,11 +8,11 @@ import {
 } from 'react-native';
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
-import Card from './components/userCard/index'; // Pastikan path ini benar
+import Card from './components/userCard/index'; 
 
 const Exercise7 = () => {
   const [users, setUsers] = useState([]);
-  const [loading, setLoading] = useState(true); // State untuk loading
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     axios
@@ -24,7 +24,7 @@ const Exercise7 = () => {
         console.log('Error fetching data:', error);
       })
       .finally(() => {
-        setLoading(false); // Set loading ke false setelah selesai
+        setLoading(false); 
       });
   }, []);
 
@@ -55,7 +55,7 @@ export default Exercise7;
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1, // Memastikan container memenuhi layar
+    flex: 1, 
     backgroundColor: '#f0f2f5',
   },
   title: {
