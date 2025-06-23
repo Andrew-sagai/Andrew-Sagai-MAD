@@ -1,12 +1,17 @@
 import {StyleSheet, Text, View} from 'react-native';
-import React from 'react';
+import React, {useEffect} from 'react';
 import Logo from '../../assets/Logo.svg';
 
-const SplashScreen = () => {
+const SplashScreen = ({navigation}) => {
+  useEffect(() => {
+    setTimeout(() => {
+      navigation.replace('SignIn');
+    }, 3000);
+  }, []);
   return (
     <View style={styles.container}>
-        <Logo />
-        <Text style={styles.text}>Money Tracker</Text>
+      <Logo />
+      <Text style={styles.text}>Money Tracker</Text>
     </View>
   );
 };
@@ -21,7 +26,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   text: {
-    fontfamily:'Poppins-Medium',
     fontSize: 32,
+    fontFamily: 'Poppins-Medium',
   },
 });

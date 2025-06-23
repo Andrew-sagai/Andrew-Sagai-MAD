@@ -14,4 +14,4 @@ import RestApi from './RestApi';
 import RegistrationScreen from './RegistrationScreen'; 
 import Exercise7 from './Exercise7'; 
 
-AppRegistry.registerComponent(appName, () => App);
+AppRegistry.registerComponent('GoodProject', () => App);
